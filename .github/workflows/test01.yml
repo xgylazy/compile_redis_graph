@@ -26,12 +26,11 @@ jobs:
         sudo apt-get install -y build-essential cmake m4 automake peg libtool autoconf python3
 
     - name: Build the project
-      run: |
-        make
+      run: make
 
     - name: Upload RedisGraph binary
       uses: actions/upload-artifact@v3
       with:
-      name: redisgraph
-      path: /home/runner/work/compile_redis_graph/compile_redis_graph/bin/linux-x64-release/src/redisgraph.so
+        name: redisgraph
+        path: /home/runner/work/compile_redis_graph/compile_redis_graph/bin/linux-x64-release/src/redisgraph.so
   
