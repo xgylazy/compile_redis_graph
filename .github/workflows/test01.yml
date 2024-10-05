@@ -32,5 +32,6 @@ jobs:
     - name: Upload RedisGraph binary
       uses: actions/upload-artifact@v3
       with:
-        name: redisgraph
-        path: src/redisgraph.so
+      name: redisgraph
+      path: /home/runner/work/compile_redis_graph/compile_redis_graph/bin/linux-x64-release/src/redisgraph.so
+  
